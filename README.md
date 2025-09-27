@@ -1,2 +1,31 @@
 # ckty-hub
-Script Hub for Roblox
+
+A script hub aiming for quality scripts instead of quantity.
+
+## Usage
+
+For latest release
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CioKiTTY/ckty-hub/main/loader.lua"))()
+```
+
+Specific version
+```lua
+local version = "v0.0.1-unstable.1"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CioKiTTY/ckty-hub/" .. version .. "/loader.lua"))()
+```
+
+## Supported Games
+
+| Game                | Status              |
+| ------------------- | ------------------- |
+| The Rake Remastered | 🟡 Under Development |
+
+## Credits
+
+[CioKiTTY](https://github.com/CioKiTTY) - Sole Developer
+
+## License
+
+This project is license under the [GNU GPLv3 Licence](./LICENSE)
