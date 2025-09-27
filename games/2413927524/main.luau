@@ -246,7 +246,7 @@ end
 
 -- [Render]
 local function updateTrackers(category: string)
-	if category == "Rake" or category == "FlareGun" then
+	if category == "rake" or category == "flareGun" then
 		if espObjects[category] ~= nil then
 			espObjects[category]:Update(espObjects.Render[category])
 		end
