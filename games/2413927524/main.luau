@@ -27,6 +27,7 @@ local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
 ----<< Checks >>----
+local checkFunc = getgenv().CKTY_HUB.methods.checkFunc
 checkFunc(hookfunction, "hookfunction")
 checkFunc(hookmetamethod, "hookmetamethod")
 checkFunc(getloadedmodules, "getloadedmodules")

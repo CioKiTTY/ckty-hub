@@ -20,6 +20,7 @@
 getgenv().CKTY_HUB = {
 	version = "v0.0.1-unstable.1",
 	path = "https://raw.githubusercontent.com/CioKiTTY/ckty-hub/v0.0.1-unstable.1",
+	methods = {},
 }
 
 ----<< Functions >>----
@@ -44,6 +45,9 @@ local function checkFunc(func, name)
 	end
 	return true
 end
+
+getgenv().CKTY_HUB.methods.notify = notify
+getgenv().CKTY_HUB.methods.checkFunc = checkFunc
 
 ----<< Game Loader >>----
 -- [The Rake Remastered]
