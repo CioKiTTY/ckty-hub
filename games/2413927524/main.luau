@@ -1267,7 +1267,7 @@ do
 	Tab:Keybind({
 		Title = "Toggle GUI",
 		Misc = "Keybind to show and hide the GUI",
-		Value = Enum.KeyCode.Home,
+		Value = "Home",
 		Callback = function(keybind)
 			Window:SetToggleKey(Enum.KeyCode[keybind])
 		end,
