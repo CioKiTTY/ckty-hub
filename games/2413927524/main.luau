@@ -757,7 +757,7 @@ local Window = GUILibrary:CreateWindow({
 Window:Tag({
 	Title = getgenv().CKTY_HUB.version,
 	Color = Color3.fromHex("#30ff6a"),
-	Radius = 0,
+	Radius = 13,
 })
 
 local Tabs = {
