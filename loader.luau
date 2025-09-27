@@ -19,11 +19,11 @@
 
 local version = "v0.0.1-unstable.1"
 if getgenv().CKTY_HUB_VERSION then
-	version = getgenv().CKTY_HUB_VERSION
+	version = getgenv().CKTY_HUB_VERSION or 'v0.0.1-unstable.1'
 end
 
 getgenv().CKTY_HUB = {
-	version,
+	version = version,
 	path = "https://raw.githubusercontent.com/CioKiTTY/ckty-hub/" .. version,
 	methods = {},
 }
@@ -57,6 +57,5 @@ getgenv().CKTY_HUB.methods.checkFunc = checkFunc
 ----<< Game Loader >>----
 -- [The Rake Remastered]
 if game.PlaceId == 2413927524 then
-    notify("CKTY Hub - " .. getgenv().CKTY_HUB.version, "Game detected! Loading...")
 	loadstring(game:HttpGet(getgenv().CKTY_HUB.path .. "/games/2413927524/main.luau"))()
 end
