@@ -18,12 +18,36 @@
 ]]
 
 getgenv().CKTY_HUB = {
-    version = "v0.0.1-unstable.1",
+	version = "v0.0.1-unstable.1",
 	path = "https://raw.githubusercontent.com/CioKiTTY/ckty-hub/v0.0.1-unstable.1",
 }
+
+----<< Functions >>----
+local function notify(title, text, duration)
+	title = title or "Notification"
+	text = text or ""
+	duration = duration or 5
+
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = title,
+			Text = text,
+			Duration = duration,
+		})
+	end)
+end
+
+local function checkFunc(func, name)
+	if type(func) ~= "function" then
+		notify("Functions missing", "Function `" .. tostring(name) .. "` expected")
+		return false
+	end
+	return true
+end
 
 ----<< Game Loader >>----
 -- [The Rake Remastered]
 if game.PlaceId == 2413927524 then
+    notify("CKTY Hub - " .. getgenv().CKTY_HUB.version, "Game detected! Loading...")
 	loadstring(game:HttpGet(getgenv().CKTY_HUB.path .. "/games/2413927524/main.luau"))()
 end
