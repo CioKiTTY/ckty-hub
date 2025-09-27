@@ -315,3 +315,5 @@ end)()
 ----<< Store to Global >>-----
 getgenv().CKTY_HUB["ESPController"].module = ESPController
 getgenv().CKTY_HUB["ESPController"].folder = espFolder
+
+return ESPController

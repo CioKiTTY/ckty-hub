@@ -104,3 +104,5 @@ end
 ----<< Store to Global >>-----
 getgenv().CKTY_HUB["HighlightPool"].module = HighlightPool
 getgenv().CKTY_HUB["HighlightPool"].folder = highlightPoolFolder
+
+return HighlightPool
