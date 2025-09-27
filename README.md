@@ -11,7 +11,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CioKiTTY/ckty-hub/mai
 
 Specific version
 ```lua
-local version = "v0.0.1-unstable.1"
+getgenv().CKTY_HUB_VERSION = "v0.0.1-unstable.1"
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CioKiTTY/ckty-hub/" .. version .. "/loader.lua"))()
 ```

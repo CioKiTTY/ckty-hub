@@ -17,9 +17,14 @@
     License: GNU General Public License v3.0
 ]]
 
+local version = "v0.0.1-unstable.1"
+if getgenv().CKTY_HUB_VERSION then
+	version = getgenv().CKTY_HUB_VERSION
+end
+
 getgenv().CKTY_HUB = {
-	version = "v0.0.1-unstable.1",
-	path = "https://raw.githubusercontent.com/CioKiTTY/ckty-hub/v0.0.1-unstable.1",
+	version,
+	path = "https://raw.githubusercontent.com/CioKiTTY/ckty-hub/" .. version,
 	methods = {},
 }
 
