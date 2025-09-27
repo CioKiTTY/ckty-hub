@@ -311,3 +311,7 @@ coroutine.wrap(function()
 		task.wait(0.5)
 	end
 end)()
+
+----<< Store to Global >>-----
+getgenv().CKTY_HUB["ESPController"].module = ESPController
+getgenv().CKTY_HUB["ESPController"].folder = espFolder
